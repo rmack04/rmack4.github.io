@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Web Servers Work</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>How Web Servers Work</h1>
+        <p>Understanding How Websites Deliver Information</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="how-it-works.html">How Web Servers Work</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About Me</a>
+    </nav>
+
+    <main>
+
+        <!-- Introduction -->
+        <section>
+            <h2>What Does a Web Server Do?</h2>
+
+            <p>
+                A web server is responsible for
+                receiving requests from browsers
+                and returning website information.
+                When someone enters a website
+                address, the browser communicates
+                with a server to request content.
+            </p>
+
+            <p>
+                Web servers can deliver HTML,
+                CSS, JavaScript, images, and
+                other files. They can also send
+                requests to application servers
+                when additional processing
+                is needed.
+            </p>
+        </section>
+
+        <!-- Request Process -->
+        <section>
+            <h2>What Happens When You Visit a Website?</h2>
+
+            <p>
+                Several steps take place when
+                someone opens a website.
+            </p>
+
+            <ol>
+                <li>
+                    DNS helps the browser find
+                    the IP address connected
+                    to the website name.
+                </li>
+
+                <li>
+                    The browser establishes
+                    a connection to the server.
+                    HTTPS normally uses TLS
+                    to protect communication.
+                </li>
+
+                <li>
+                    The browser sends an
+                    HTTP request to the server.
+                </li>
+
+                <li>
+                    The server decides whether
+                    to return a file, redirect
+                    the request, or forward it
+                    to an application.
+                </li>
+
+                <li>
+                    The server sends an HTTP
+                    response back to the browser.
+                </li>
+            </ol>
+        </section>
+
+        <!-- Static vs Dynamic -->
+        <section>
+            <h2>Static and Dynamic Content</h2>
+
+            <p>
+                Web servers can provide two
+                common types of website content:
+                static and dynamic.
+            </p>
+
+            <table>
+                <tr>
+                    <th>Static Content</th>
+                    <th>Dynamic Content</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        Content that already
+                        exists as a file.
+                    </td>
+                    <td>
+                        Content generated when
+                        a request is received.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Examples include HTML,
+                        CSS, images, and fonts.
+                    </td>
+                    <td>
+                        Examples include account
+                        dashboards, search results,
+                        and shopping carts.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Often delivered directly
+                        by the web server.
+                    </td>
+                    <td>
+                        May require an application
+                        server or database.
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Multiple Users -->
+        <section>
+            <h2>How Web Servers Handle Multiple Users</h2>
+
+            <p>
+                Popular websites can receive
+                requests from many users at
+                the same time. Web servers
+                use different approaches
+                to manage these connections.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Process-based:</strong>
+                    Uses operating system
+                    processes to handle work.
+                </li>
+
+                <li>
+                    <strong>Thread-based:</strong>
+                    Uses multiple threads
+                    within processes.
+                </li>
+
+                <li>
+                    <strong>Event-driven:</strong>
+                    Uses an event loop to manage
+                    many connections efficiently.
+                </li>
+            </ul>
+
+            <p>
+                Nginx is known for its
+                event-driven architecture,
+                while Apache supports different
+                processing models.
+            </p>
+        </section>
+
+        <!-- Security -->
+        <section>
+            <h2>Web Server Security</h2>
+
+            <p>
+                Security is important because
+                web servers communicate with
+                users and sometimes handle
+                private information.
+                HTTPS uses TLS encryption
+                to help protect data
+                during communication.
+            </p>
+
+            <h3>Common Security Practices</h3>
+
+            <ul>
+                <li>Updating server software</li>
+                <li>Using HTTPS connections</li>
+                <li>Protecting sensitive files</li>
+                <li>Monitoring server logs</li>
+                <li>Controlling user access</li>
+            </ul>
+        </section>
+
+        <!-- Page Navigation -->
+        <section>
+            <h2>Continue Learning</h2>
+
+            <p>
+                <a href="concepts.html">
+                    Next: Key Concepts
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Class Project Footer -->
+    <footer>
+        <p>
+            This website is a class project
+            for IT 3203 Web Development.
+        </p>
+
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/">
+                IT 3203 Course Website
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
