@@ -1,203 +1,124 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Servers - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Servers | Web Servers</title>
+
+  <!-- All six pages use this one CSS file. -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Website Header -->
-    <header>
-        <h1>Web Servers</h1>
-        <p>The Software That Delivers the Web</p>
-        <p>IT 3203 Web Development Project</p>
-    </header>
+  <!-- This is the top of my website. -->
+  <header>
+    <h1>Web Servers</h1>
+    <p>The Software That Delivers the Web</p>
+  </header>
 
-    <!-- Main Navigation Menu -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="history.html">History</a>
-        <a href="how-it-works.html">How Web Servers Work</a>
-        <a href="concepts.html">Key Concepts</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About Me</a>
-    </nav>
+  <!-- This menu connects all six pages. -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="references.html">References</a>
+    <a href="about.html">About Me</a>
+  </nav>
 
-    <main>
+  <main>
 
-        <!-- Introduction Section -->
-        <section id="home">
-            <h2>Introduction to Web Servers</h2>
+    <!-- This section introduces my research. -->
+    <section id="introduction">
+      <h2>Introduction</h2>
 
-            <p>
-                Web servers are an important part of the
-                internet because they allow people to
-                access websites and online information.
-                A web server is software that receives
-                requests from web browsers and sends
-                back information such as HTML files,
-                images, and other website content.
-            </p>
+      <p>
+        Web servers are important because they help people
+        open websites and find information online. A web
+        server receives a request from a browser and sends
+        back the files or information that the browser needs.
+      </p>
 
-            <p>
-                Web servers also help websites handle
-                multiple users, protect information,
-                and communicate with applications.
-                Some popular web servers include
-                Apache HTTP Server, Nginx, and
-                Microsoft IIS.
-            </p>
+      <p>
+        Web servers can send HTML, CSS, images, and other
+        content. They also help websites handle many visitors
+        and connect to applications. In this project, I will
+        explain how web servers work, where they came from,
+        and some of the technology used today.
+      </p>
 
-            <p>
-                This website will explain what web
-                servers are, how they work, their
-                history, and the important technologies
-                used today.
-            </p>
-        </section>
+      <!-- This image shows browser and server communication. -->
+      <img src="server-diagram.svg"
+           alt="A browser sends a request to a web server"
+           width="650">
+    </section>
 
-        <!-- Key Terms Section -->
-        <section id="key-terms">
-            <h2>Key Terms</h2>
+    <!-- These are important terms from my research. -->
+    <section>
+      <h2>Key Terms</h2>
 
-            <ul>
-                <li>
-                    <strong>Web Server:</strong>
-                    Software that receives requests
-                    and delivers website content.
-                </li>
+      <ul>
+        <li><strong>Web Server:</strong> Software that receives requests and sends website content.</li>
+        <li><strong>HTTP:</strong> Rules used for communication on the Web.</li>
+        <li><strong>HTTPS:</strong> HTTP communication protected with encryption.</li>
+        <li><strong>DNS:</strong> Helps find the IP address for a website name.</li>
+        <li><strong>Apache:</strong> A popular open-source web server.</li>
+        <li><strong>Nginx:</strong> A web server that can handle many connections.</li>
+        <li><strong>CDN:</strong> Helps deliver content from locations closer to users.</li>
+      </ul>
+    </section>
 
-                <li>
-                    <strong>HTTP:</strong>
-                    A protocol used to communicate
-                    between browsers and web servers.
-                </li>
+    <!-- This is my table of contents. -->
+    <section>
+      <h2>Table of Contents</h2>
 
-                <li>
-                    <strong>HTTPS:</strong>
-                    A secure version of HTTP that
-                    uses encryption.
-                </li>
+      <div class="page-grid">
 
-                <li>
-                    <strong>Apache:</strong>
-                    An open-source web server
-                    used to host websites.
-                </li>
+        <div class="card">
+          <h3>1. History</h3>
+          <p>Where web servers started and how they changed.</p>
+          <a href="history.html">Read History</a>
+        </div>
 
-                <li>
-                    <strong>Nginx:</strong>
-                    Web server software designed
-                    to handle many connections.
-                </li>
+        <div class="card">
+          <h3>2. How Web Servers Work</h3>
+          <p>How a browser and a web server communicate.</p>
+          <a href="how-it-works.html">Read How It Works</a>
+        </div>
 
-                <li>
-                    <strong>DNS:</strong>
-                    A system that helps browsers
-                    find website IP addresses.
-                </li>
+        <div class="card">
+          <h3>3. Key Concepts</h3>
+          <p>Seven terms that are important to understand.</p>
+          <a href="concepts.html">Read Key Concepts</a>
+        </div>
 
-                <li>
-                    <strong>CDN:</strong>
-                    A network that delivers content
-                    from locations closer to users.
-                </li>
-            </ul>
-        </section>
+        <div class="card">
+          <h3>4. References</h3>
+          <p>Research and websites that can help you learn.</p>
+          <a href="references.html">See References</a>
+        </div>
 
-        <!-- Table of Contents -->
-        <section id="contents">
-            <h2>Table of Contents</h2>
+        <div class="card">
+          <h3>5. About Me</h3>
+          <p>Learn about the student and the project.</p>
+          <a href="about.html">Read About Me</a>
+        </div>
 
-            <p>
-                Explore the different sections
-                of this website to learn more
-                about web servers.
-            </p>
+      </div>
+    </section>
 
-            <div class="page-grid">
+  </main>
 
-                <div class="card">
-                    <h3>1. History of Web Servers</h3>
-                    <p>
-                        Learn about the beginning
-                        of web servers and how
-                        they developed over time.
-                    </p>
-                    <a href="history.html">
-                        Read More
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>2. How Web Servers Work</h3>
-                    <p>
-                        Understand how servers
-                        receive requests and
-                        deliver website content.
-                    </p>
-                    <a href="how-it-works.html">
-                        Read More
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>3. Key Concepts</h3>
-                    <p>
-                        Learn important web server
-                        terms and technologies.
-                    </p>
-                    <a href="concepts.html">
-                        Read More
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>4. References</h3>
-                    <p>
-                        View the websites and
-                        research resources used
-                        for this project.
-                    </p>
-                    <a href="references.html">
-                        Read More
-                    </a>
-                </div>
-
-                <div class="card">
-                    <h3>5. About Me</h3>
-                    <p>
-                        Learn about the student
-                        and the purpose of
-                        this class project.
-                    </p>
-                    <a href="about.html">
-                        Read More
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Required Class Project Footer -->
-    <footer>
-        <p>
-            This website was created as a class
-            project for IT 3203 Web Development.
-        </p>
-
-        <p>
-            <a href="https://ksuweb.github.io/IT3203/">
-                IT 3203 Course Website
-            </a>
-        </p>
-    </footer>
+  <!-- This footer shows that the website is for class. -->
+  <footer>
+    <p>
+      This is a class project for
+      <a href="https://ksuweb.github.io/IT3203/">
+        IT 3203 Web Development
+      </a>.
+    </p>
+  </footer>
 
 </body>
 </html>
