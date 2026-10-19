@@ -3,121 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Servers | Web Servers</title>
-
-  <!-- All six pages use this one CSS file. -->
+  <title>How Web Browsers Work</title>
+  <!-- Connect the CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- This is the top of my website. -->
-  <header>
-    <h1>Web Servers</h1>
-    <p>The Software That Delivers the Web</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        🌐 Web Browsers Explained
+      </a>
+
+      <!-- Navigation menu -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="how-it-works.html">How Browsers Work</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About Me</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- This menu connects all six pages. -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="history.html">History</a>
-    <a href="how-it-works.html">How It Works</a>
-    <a href="concepts.html">Key Concepts</a>
-    <a href="references.html">References</a>
-    <a href="about.html">About Me</a>
-  </nav>
-
-  <main>
-
-    <!-- This section introduces my research. -->
-    <section id="introduction">
-      <h2>Introduction</h2>
-
+  <main class="container">
+    <section class="hero">
+      <h1>How Web Browsers Work</h1>
       <p>
-        Web servers are important because they help people
-        open websites and find information online. A web
-        server receives a request from a browser and sends
-        back the files or information that the browser needs.
+        A beginner-friendly introduction to the
+        software that helps us explore the World Wide Web.
+      </p>
+    </section>
+
+    <section class="panel" id="featured-topic">
+      <h2>Introduction / Abstract</h2>
+      <p>
+        Web browsers are applications that help people
+        visit websites, read information, watch videos,
+        and interact with online services.
       </p>
 
       <p>
-        Web servers can send HTML, CSS, images, and other
-        content. They also help websites handle many visitors
-        and connect to applications. In this project, I will
-        explain how web servers work, where they came from,
-        and some of the technology used today.
+        <strong>Key Terms:</strong>
+        Browser, HTML, CSS, HTTP, URL,
+        JavaScript, and DOM.
       </p>
-
-      <!-- This image shows browser and server communication. -->
-      <img src="server-diagram.svg"
-           alt="A browser sends a request to a web server"
-           width="650">
     </section>
 
-    <!-- These are important terms from my research. -->
-    <section>
-      <h2>Key Terms</h2>
-
-      <ul>
-        <li><strong>Web Server:</strong> Software that receives requests and sends website content.</li>
-        <li><strong>HTTP:</strong> Rules used for communication on the Web.</li>
-        <li><strong>HTTPS:</strong> HTTP communication protected with encryption.</li>
-        <li><strong>DNS:</strong> Helps find the IP address for a website name.</li>
-        <li><strong>Apache:</strong> A popular open-source web server.</li>
-        <li><strong>Nginx:</strong> A web server that can handle many connections.</li>
-        <li><strong>CDN:</strong> Helps deliver content from locations closer to users.</li>
-      </ul>
-    </section>
-
-    <!-- This is my table of contents. -->
     <section>
       <h2>Table of Contents</h2>
 
-      <div class="page-grid">
-
-        <div class="card">
+      <!-- CSS Grid organizes the links -->
+      <div class="card-grid">
+        <a class="topic-card" href="history.html">
           <h3>1. History</h3>
-          <p>Where web servers started and how they changed.</p>
-          <a href="history.html">Read History</a>
-        </div>
+          <p>How web browsers developed over time.</p>
+        </a>
 
-        <div class="card">
-          <h3>2. How Web Servers Work</h3>
-          <p>How a browser and a web server communicate.</p>
-          <a href="how-it-works.html">Read How It Works</a>
-        </div>
+        <a class="topic-card" href="how-it-works.html">
+          <h3>2. How Browsers Work</h3>
+          <p>How a browser displays a website.</p>
+        </a>
 
-        <div class="card">
+        <a class="topic-card" href="concepts.html">
           <h3>3. Key Concepts</h3>
-          <p>Seven terms that are important to understand.</p>
-          <a href="concepts.html">Read Key Concepts</a>
-        </div>
+          <p>Seven important web development terms.</p>
+        </a>
 
-        <div class="card">
+        <a class="topic-card" href="references.html">
           <h3>4. References</h3>
-          <p>Research and websites that can help you learn.</p>
-          <a href="references.html">See References</a>
-        </div>
+          <p>Research and learning websites.</p>
+        </a>
 
-        <div class="card">
+        <a class="topic-card" href="about.html">
           <h3>5. About Me</h3>
-          <p>Learn about the student and the project.</p>
-          <a href="about.html">Read About Me</a>
-        </div>
-
+          <p>Information about the student and project.</p>
+        </a>
       </div>
     </section>
 
+    <section class="panel">
+      <h2>Browser Basics</h2>
+      <img src="browser-diagram.svg"
+           alt="Browser communicating with a web server">
+      <p>
+        A browser sends a request to a web server,
+        receives information, and displays the web page.
+      </p>
+    </section>
   </main>
 
-  <!-- This footer shows that the website is for class. -->
-  <footer>
-    <p>
-      This is a class project for
+  <footer class="site-footer">
+    <div class="container">
+      This website is a class project for
       <a href="https://ksuweb.github.io/IT3203/">
         IT 3203 Web Development
       </a>.
-    </p>
+    </div>
   </footer>
 
 </body>
