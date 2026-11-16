@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Browser Quiz</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website header and navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                🌐 Web Browsers Explained
+            </a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="Topic1.html">History</a>
+                <a href="Topic2.html">How Browsers Work</a>
+                <a href="concepts.html">Key Concepts</a>
+                <a href="reference.html">References</a>
+                <a href="about.html">About Me</a>
+                <a href="Quiz.html">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+
+        <h1>Web Browser Knowledge Quiz</h1>
+
+        <p>
+            This quiz will test your understanding
+            of web browsers and how they work.
+            You have 10 minutes to answer 10 questions.
+            Each question is worth one point.
+        </p>
+
+        <!-- JavaScript updates the timer -->
+        <h2 id="timer">Time Left: 10:00</h2>
+
+        <!-- Quiz form -->
+        <form id="quizForm">
+
+            <!-- Question 1: Fill in the blank -->
+            <div class="question">
+                <h3>Question 1</h3>
+                <p>
+                    What language is used to structure
+                    web pages?
+                </p>
+
+                <input type="text" name="q1"
+                       aria-label="Question 1 answer"
+                       placeholder="Enter your answer">
+            </div>
+
+            <!-- Question 2: Fill in the blank -->
+            <div class="question">
+                <h3>Question 2</h3>
+                <p>
+                    What is the abbreviation for
+                    a web page address?
+                </p>
+
+                <input type="text" name="q2"
+                       aria-label="Question 2 answer"
+                       placeholder="Enter your answer">
+            </div>
+
+            <!-- Question 3: Multiple choice -->
+            <div class="question">
+                <h3>Question 3</h3>
+                <p>What is the purpose of a web browser?</p>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    Store computer files
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    Display websites
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    Build computer hardware
+                </label>
+            </div>
+
+            <!-- Question 4: Multiple choice -->
+            <div class="question">
+                <h3>Question 4</h3>
+                <p>
+                    What converts HTML and CSS
+                    into a visual web page?
+                </p>
+
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    Rendering engine
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    Keyboard
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    Database
+                </label>
+            </div>
+
+            <!-- Question 5: Multiple choice -->
+            <div class="question">
+                <h3>Question 5</h3>
+                <p>
+                    What protocol is used to
+                    transfer web pages?
+                </p>
+
+                <label>
+                    <input type="radio" name="q5" value="a">
+                    FTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="b">
+                    SMTP
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="c">
+                    HTTP
+                </label>
+            </div>
+
+            <!-- Question 6: Multiple selection -->
+            <div class="question">
+                <h3>Question 6</h3>
+                <p>
+                    Which are common web browser features?
+                    Select all correct answers.
+                </p>
+
+                <label>
+                    <input type="checkbox" name="q6" value="a">
+                    Bookmarks
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="b">
+                    Tabs
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="c">
+                    Browsing history
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="d">
+                    Manufacturing CPUs
+                </label>
+            </div>
+
+            <!-- Question 7: Multiple choice -->
+            <div class="question">
+                <h3>Question 7</h3>
+                <p>
+                    What language adds interactivity
+                    to websites?
+                </p>
+
+                <label>
+                    <input type="radio" name="q7" value="a">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="b">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="c">
+                    SQL
+                </label>
+            </div>
+
+            <!-- Question 8: Multiple choice -->
+            <div class="question">
+                <h3>Question 8</h3>
+                <p>What is browser caching used for?</p>
+
+                <label>
+                    <input type="radio" name="q8" value="a">
+                    Storing reusable website resources
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="b">
+                    Deleting websites
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="c">
+                    Blocking all internet access
+                </label>
+            </div>
+
+            <!-- Question 9: Multiple choice -->
+            <div class="question">
+                <h3>Question 9</h3>
+                <p>What does DNS help a browser do?</p>
+
+                <label>
+                    <input type="radio" name="q9" value="a">
+                    Change screen brightness
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="b">
+                    Save passwords
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="c">
+                    Find IP addresses for domain names
+                </label>
+            </div>
+
+            <!-- Question 10: Multiple choice -->
+            <div class="question">
+                <h3>Question 10</h3>
+                <p>
+                    What does HTTPS provide
+                    compared to HTTP?
+                </p>
+
+                <label>
+                    <input type="radio" name="q10" value="a">
+                    Larger images
+                </label>
+
+                <label>
+                    <input type="radio" name="q10" value="b">
+                    Encrypted communication
+                </label>
+
+                <label>
+                    <input type="radio" name="q10" value="c">
+                    Faster typing
+                </label>
+            </div>
+
+            <!-- Quiz buttons -->
+            <div class="quiz-buttons">
+                <button type="submit" id="submitBtn">
+                    Submit Quiz
+                </button>
+
+                <button type="button" id="resetBtn">
+                    Retake Quiz
+                </button>
+            </div>
+        </form>
+
+        <!-- Quiz results appear here -->
+        <section id="results" aria-live="polite" hidden>
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer class="site-footer">
+        <p>
+            IT 3203 Web Development Project
+        </p>
+
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/">
+                KSU IT 3203
+            </a>
+        </p>
+    </footer>
+
+    <!-- Connect the JavaScript file -->
+    <script src="quiz.js"></script>
+
+</body>
+</html>
