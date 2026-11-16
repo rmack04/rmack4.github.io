@@ -1,4 +1,8 @@
 /* General page design */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Shared website header and navigation */
 header {
     background-color: #182848;
     color: white;
@@ -20,6 +24,30 @@ header h1 {
     color: white;
 }
 
+.site-header {
+    padding: 16px 24px;
+}
+
+.container {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 /* Navigation using Flexbox */
 nav {
     background-color: #273c75;
@@ -28,15 +56,25 @@ nav {
     flex-wrap: wrap;
 }
 
+.site-header nav {
+    background: transparent;
+    justify-content: flex-end;
+}
+
 nav a {
     color: white;
     padding: 15px 20px;
     text-decoration: none;
 }
 
-/* Hover effect */
-nav a:hover {
+.site-header nav a {
+    padding: 10px 12px;
+}
+
+nav a:hover,
+nav a:focus-visible {
     background-color: #4070c0;
+    border-radius: 4px;
 }
 
 /* Main content */
@@ -46,7 +84,136 @@ main {
     padding: 20px;
 }
 
-/* Section styling */
+/* Quiz layout */
+.quiz-container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 32px;
+    background-color: white;
+    border: 1px solid #dce2ed;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(24, 40, 72, 0.08);
+}
+
+.quiz-container > h1 {
+    margin-top: 0;
+    color: #182848;
+}
+
+#timer {
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 10px 16px;
+    color: #182848;
+    background-color: #e8efff;
+    border-radius: 8px;
+}
+
+.question {
+    margin: 18px 0;
+    padding: 20px;
+    background-color: #f8f9fc;
+    border: 1px solid #dce2ed;
+    border-radius: 8px;
+}
+
+.question h3 {
+    margin-top: 0;
+    color: #273c75;
+}
+
+.question label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.question input[type="radio"],
+.question input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #273c75;
+}
+
+.question input[type="text"] {
+    width: min(100%, 420px);
+    padding: 10px 12px;
+    font: inherit;
+    border: 1px solid #aeb8ca;
+    border-radius: 6px;
+}
+
+.question input[type="text"]:focus {
+    outline: 3px solid rgba(64, 112, 192, 0.25);
+    border-color: #4070c0;
+}
+
+.quiz-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.quiz-buttons button {
+    padding: 12px 20px;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    background-color: #273c75;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quiz-buttons button:hover:not(:disabled),
+.quiz-buttons button:focus-visible:not(:disabled) {
+    background-color: #4070c0;
+}
+
+.quiz-buttons button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Results and answer feedback */
+#results {
+    margin-top: 28px;
+}
+
+.result-item {
+    margin: 12px 0;
+    padding: 16px;
+    background-color: #f8f9fc;
+    border: 1px solid #dce2ed;
+    border-radius: 8px;
+}
+
+.result-item h3 {
+    margin-top: 0;
+}
+
+.result-item.correct {
+    background-color: #eaf6ed;
+    border-left: 5px solid #2e7d32;
+}
+
+.result-item.incorrect {
+    background-color: #ffebee;
+    border-left: 5px solid #c62828;
+}
+
+.pass {
+    color: #2e7d32;
+}
+
+.fail {
+    color: #c62828;
+}
+
+/* Section styling for other pages */
 section {
     background-color: white;
     padding: 25px;
@@ -72,7 +239,8 @@ table {
     margin-top: 15px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ccc;
     padding: 12px;
     text-align: left;
@@ -94,16 +262,33 @@ footer a {
     color: #b8dcff;
 }
 
-/* Incorrect answers are red */
-.result-item.incorrect {
-    background-color: #ffebee;
-    border-left: 5px solid #c62828;
-}
-
 /* Small-screen layout */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    .site-header {
+        padding: 16px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .brand {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .site-header nav {
+        justify-content: center;
+    }
+
+    .site-header nav a {
+        padding: 9px 10px;
+    }
+
     .quiz-container {
-        padding: 15px;
+        margin: 16px;
+        padding: 20px;
     }
 
     .quiz-buttons {
